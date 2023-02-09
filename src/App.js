@@ -1,12 +1,14 @@
 import "./App.css";
-import { Button, Container, ThemeProvider } from "@mui/material";
+import {  Container, ThemeProvider } from "@mui/material";
 import theme from "./theme";
+import Appbar from "./Components/Appbar/Appbar";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth="xl">
-        <Button variant="contained">Hello</Button>
+        {/* App bar  */}
+        <Appbar />
       </Container>
     </ThemeProvider>
   );
