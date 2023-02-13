@@ -12,7 +12,11 @@ const theme = createTheme({
     },
     secondary: {
       main: colors.secondary,
+      grey:"#F2CD5C"
     },
+    textColor:{
+      main:"#ffffff"
+    }
   },
 });
 

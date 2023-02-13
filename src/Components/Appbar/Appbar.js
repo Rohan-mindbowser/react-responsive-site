@@ -1,12 +1,10 @@
-import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import React from "react";
 import AppBarDesktop from "./AppBarDesktop";
 import AppBarMobile from "./AppBarMobile";
 
 const Appbar = () => {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("md"));
+  const matches = useMediaQuery("(max-width:1080px)");
   return <>{matches ? <AppBarMobile /> : <AppBarDesktop />}</>;
 };
 

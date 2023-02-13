@@ -1,7 +1,6 @@
 import { AppBar, Button, Tab, Tabs, Toolbar } from "@mui/material";
 import React, { useState } from "react";
 import { APP_LOGO } from "../../constant";
-import AppDrawer from "./AppDrawer";
 
 const AppBarDesktop = () => {
   const [tabState, setTabState] = useState(0);
