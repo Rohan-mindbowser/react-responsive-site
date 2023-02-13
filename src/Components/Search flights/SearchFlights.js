@@ -42,14 +42,15 @@ const SearchFlights = () => {
       sx={{
         width: matches ? "100%" : "90%",
         margin: "auto",
-        bgcolor: "secondary.main",
+        backgroundColor: "#F7EFE5",
+        boxShadow:"10"
       }}
     >
       <Box
         sx={{
           borderBottom: 1,
           borderColor: "divider",
-          backgroundColor: "white",
+          bgcolor: "secondary.main",
         }}
       >
         <Tabs
