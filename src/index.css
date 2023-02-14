@@ -28,8 +28,23 @@ code {
   height: 100px;
   color: black;
 }
-.swiper-slide {
-  margin-right: 0px;
+.extra_image {
+  cursor: pointer;
+}
+.extras_image_hover {
+  position: absolute;
+  z-index: 9;
+  top: 85%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 100%;
+  color: "white";
+  height: 100%;
+  transition: 0.3s all ease;
+  padding: 0px 10px;
+}
+.extra_image:hover ~ .extras_image_hover {
+  background-color: #913175;
+  top: 65%;
 }
 @media only screen and (max-width: 600px) {
   .swiper-slide img {
