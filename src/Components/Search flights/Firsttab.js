@@ -21,7 +21,7 @@ const Firsttab = () => {
   };
   return (
     <Grid mt={1} container spacing={2}>
-      <Grid item sm={4} lg={3}>
+      <Grid item xs={12} sm={4} lg={3}>
         <TextField
           id="outlined-basic"
           label="Origin"
@@ -29,7 +29,7 @@ const Firsttab = () => {
           sx={{ width: "100%", borderColor: "red" }}
         />
       </Grid>
-      <Grid item sm={4} lg={3}>
+      <Grid item xs={12} sm={4} lg={3}>
         <TextField
           id="outlined-basic"
           label="Destination"
@@ -37,7 +37,7 @@ const Firsttab = () => {
           sx={{ width: "100%" }}
         />
       </Grid>
-      <Grid item sm={4} lg={3}>
+      <Grid item xs={12} sm={4} lg={3}>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <MobileDatePicker
             className="date_picker"
@@ -49,7 +49,7 @@ const Firsttab = () => {
           />
         </LocalizationProvider>
       </Grid>
-      <Grid item sm={4} lg={3}>
+      <Grid item xs={12} sm={4} lg={3}>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <MobileDatePicker
             className="date_picker"
@@ -61,7 +61,7 @@ const Firsttab = () => {
           />
         </LocalizationProvider>
       </Grid>
-      <Grid item md={6}>
+      <Grid item xs={12} sm={4} md={6}>
         <TextField
           id="outlined-basic"
           label="Passengers"
@@ -69,7 +69,7 @@ const Firsttab = () => {
           sx={{ width: "100%" }}
         />
       </Grid>
-      <Grid item md={3}>
+      <Grid item xs={12} sm={4} md={3}>
         <TextField
           id="outlined-basic"
           label="Promo code"
@@ -77,7 +77,7 @@ const Firsttab = () => {
           sx={{ width: "100%" }}
         />
       </Grid>
-      <Grid item md={3}>
+      <Grid item xs={12} sm={4} md={3}>
         <Button variant="contained" sx={{ width: "100%", height: "61px" }}>
           Search Flights
         </Button>

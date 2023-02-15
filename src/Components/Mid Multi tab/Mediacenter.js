@@ -3,8 +3,8 @@ import React from "react";
 
 const Mediacenter = () => {
   return (
-    <Grid container spacing={1}>
-      <Grid item md={6} lg={4}>
+    <Grid container spacing={3}>
+      <Grid item xs={12} sm={6} lg={4}>
         <div className="addons_container">
           <Typography sx={{ fontWeight: "700" }} mb={2}>
             Enjoy ADDONS at
@@ -30,7 +30,7 @@ const Mediacenter = () => {
           </Typography>
         </div>
       </Grid>
-      <Grid item md={6} lg={4}>
+      <Grid item xs={12} sm={6} lg={4}>
         <div className="addons_container">
           <Typography sx={{ fontWeight: "700" }} mb={2}>
             Enjoy ADDONS at
@@ -56,7 +56,7 @@ const Mediacenter = () => {
           </Typography>
         </div>
       </Grid>
-      <Grid item md={6} lg={4}>
+      <Grid item xs={12} sm={6} lg={4}>
         <div className="addons_container">
           <Typography sx={{ fontWeight: "700" }} mb={2}>
             Enjoy ADDONS at

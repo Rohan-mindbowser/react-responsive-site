@@ -17,3 +17,9 @@ export const EXTRAS_IMAGE_SLIDER = [
   "https://www.airvistara.com/content/dam/airvistara/global/english/home-page/extras/lounge-access.jpg",
   "https://www.airvistara.com/content/dam/airvistara/global/english/home-page/extras/vistara-upgrade.jpg",
 ];
+
+export const ADDONS_IMAGES = [
+  "https://d3pvfs0dgh4r2q.cloudfront.net/website/MainComponent/common/SjAddons/SpiceMax.png",
+  "https://d3pvfs0dgh4r2q.cloudfront.net/website/MainComponent/common/SjAddons/xtraseat.png",
+  "https://d3pvfs0dgh4r2q.cloudfront.net/website/MainComponent/common/SjAddons/splus.png",
+];

@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 
 // import required modules
 import { Navigation } from "swiper";
@@ -20,6 +21,7 @@ const Homeslider = () => {
         autoplay={true}
         navigation={true}
         modules={[Navigation]}
+        effect={"fade"}
         className="mySwiper"
       >
         {HOME_IMAGE_SLIDER.map((image, id) => {
