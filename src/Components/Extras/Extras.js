@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { EXTRAS_IMAGE_SLIDER } from "../../constant";
+import Midmultitab from "../Mid Multi tab/Midmultitab";
 
 const Extras = () => {
   register();
@@ -62,6 +63,9 @@ const Extras = () => {
           );
         })}
       </Swiper>
+
+      {/* Multi tab after extras image slider  */}
+      <Midmultitab />
     </Box>
   );
 };

@@ -1,10 +1,8 @@
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 import React, { useState } from "react";
-import Firsttab from "./Firsttab";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import Mediacenter from "./Mediacenter";
 
-const SearchFlights = () => {
-  const matches = useMediaQuery("(max-width:700px)");
+const Midmultitab = () => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -40,35 +38,49 @@ const SearchFlights = () => {
   return (
     <Box
       sx={{
-        width: matches ? "100%" : "90%",
+        width: "100%",
         margin: "auto",
-        backgroundColor: "#F7EFE5",
-        boxShadow: "10",
       }}
     >
       <Box
         sx={{
           borderBottom: 1,
           borderColor: "divider",
-          bgcolor: "secondary.main",
+          backgroundColor: "#ffffff",
+          width: "100%",
         }}
       >
         <Tabs
+          sx={{ width: "100%" }}
           value={value}
           onChange={handleChange}
           variant="scrollable"
-          scrollButtons
-          allowScrollButtonsMobile
           aria-label="scrollable force tabs example"
         >
-          <Tab label="Flights" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-          <Tab label="Item Three" {...a11yProps(3)} />
+          <Tab
+            sx={{ fontWeight: "700" }}
+            label="Deals & Offers"
+            {...a11yProps(0)}
+          />
+          <Tab
+            sx={{ fontWeight: "700" }}
+            label="Club Vistara"
+            {...a11yProps(1)}
+          />
+          <Tab
+            sx={{ fontWeight: "700" }}
+            label="Media Center"
+            {...a11yProps(2)}
+          />
+          <Tab
+            sx={{ fontWeight: "700" }}
+            label="Vistara Experience"
+            {...a11yProps(3)}
+          />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Firsttab />
+        <Mediacenter />
       </TabPanel>
       <TabPanel value={value} index={1}>
         Item Two
@@ -83,4 +95,4 @@ const SearchFlights = () => {
   );
 };
 
-export default SearchFlights;
+export default Midmultitab;
